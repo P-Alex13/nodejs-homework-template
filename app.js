@@ -16,7 +16,7 @@ app.use(logger(formatsLogger));
 app.use(cors());
 app.use(express.json());
 
-
+// Configurează folderul public
 const __dirname = path.resolve();
 
 app.use("/public", express.static(path.join(__dirname, "public")));
